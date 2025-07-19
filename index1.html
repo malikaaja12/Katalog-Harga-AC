@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacific AC - Katalog Harga</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+  <body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header
+        class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 shadow-lg rounded-b-lg"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-3xl font-bold cursor-pointer" id="home-link">
+            Pacific AC
+          </h1>
+          <nav>
+            <ul class="flex space-x-6 text-lg">
+              <li>
+                <a
+                  href="#"
+                  id="home-nav-link"
+                  class="hover:text-blue-200 transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  id="contact-link"
+                  class="hover:text-blue-200 transition duration-300"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Content Area (Product Catalog) -->
+      <main id="main-content" class="container mx-auto flex-grow p-6">
+        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-10">
+          Pilihan AC Split Unggulan Kami Berdasarkan Merek
+        </h2>
+        <section class="mb-12">
+          <div
+            id="brand-grid"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+          >
+            <!-- Brand cards will be dynamically inserted here -->
+          </div>
+        </section>
+      </main>
+
+      <!-- Contact Section -->
+      <section
+        id="contact-section"
+        class="container mx-auto flex-grow p-6 hidden"
+      >
+        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-10">
+          Kontak Kami
+        </h2>
+        <div
+          class="bg-white rounded-xl shadow-md p-8 grid grid-cols-1 md:grid-cols-2 gap-12"
+        >
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              CV. KING GASAUSE
+            </h3>
+            <h5 class="text-xl font-semibold text-gray-700 mb-2">Dealer :</h5>
+            <p class="text-gray-700 mb-6">
+              Jl. Fatmawati Raya No.147, Pedurungan, Semarang, Jawa Tengah 50191
+            </p>
+            <h5 class="text-xl font-semibold text-gray-700 mb-2">Workshop :</h5>
+            <p class="text-gray-700 mb-6">Jl. Klipang Blok R</p>
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold text-gray-700 mb-2">
+                Jam Operasional
+              </h4>
+              <p class="text-gray-600">08.30 - 17.00 (Senin - Jumat)</p>
+              <p class="text-gray-600">08.30 - 16.30 (Sabtu)</p>
+            </div>
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold text-gray-700 mb-2">Whatsapp</h4>
+              <p class="text-gray-600">0819-3802-7743</p>
+              <p class="text-gray-600">0856-4105-9555</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-700 mb-2">Email</h4>
+              <p class="text-blue-600 hover:underline">
+                <a href="mailto:kinggasause@gmail.com">kinggasause@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Kirim Pesan Kepada Kami
+            </h3>
+            <form class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="firstName"
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    >Nama Depan<span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:shadow-outline sm:text-based sm:leading-6"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="lastName"
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    >Nama Belakang<span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:shadow-outline sm:text-based sm:leading-6"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    >Email<span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:shadow-outline sm:text-based sm:leading-6l"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    >Ponsel<span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:shadow-outline sm:text-based sm:leading-6"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="province"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Provinsi<span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="province"
+                  name="province"
+                  class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:shadow-outline sm:text-based sm:leading-6"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Subjek<span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:shadow-outline sm:text-based sm:leading-6"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Pesan<span class="text-red-500">*</span></label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:shadow-outline sm:text-based sm:leading-6"
+                  placeholder="Halo, ada yang bisa kami bantu?"
+                  required
+                ></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg hover:shadow-xl flex items-center"
+                >
+                  Kirim Pesan
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-800 text-white p-6 mt-10 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+          <p>&copy; 2025 Katalog AC Terbaik.</p>
+          <p>Juli 2025 Pacific AC</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Product List Modal -->
+    <div id="product-modal" class="modal-overlay hidden">
+      <div class="modal-content w-full md:w-3/4 lg:w-2/3">
+        <button class="close-button" onclick="closeProductModal()">
+          &times;
+        </button>
+        <h3
+          id="modal-brand-title"
+          class="text-3xl font-bold text-gray-800 mb-6 text-center"
+        ></h3>
+        <div id="modal-product-list" class="space-y-8">
+          <!-- Product types and cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-detail-modal" class="modal-overlay hidden">
+      <div
+        id="product-detail-content"
+        class="modal-content w-full md:w-3/4 lg:w-1/2"
+      >
+        <button class="close-button" onclick="closeDetailModal()">
+          &times;
+        </button>
+        <!-- Detail content will be dynamically inserted here -->
+      </div>
+    </div>
+    <a
+      href="https://wa.me/6281938027743?text=Halo%2C%20Admin%20Pacifc%20AC."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 ease-in-out transform hover:scale-110 z-50 group"
+    >
+      <svg
+        xmlns="img/logo/ikon.svg"
+        width="40"
+        height="40"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.487 5.235 3.487 8.413 0 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.731 6.086l.474.852-1.24 4.525 4.639-1.219.823.442z"
+        />
+      </svg>
+      <span
+        class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-sm px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+      >
+        Customer Service
+      </span>
+    </a>
+
+    <script>
+      // --- DATA ---
+      const acData = [
+        {
+          brand: "Daikin",
+          imageUrl: "img/daikin/logo.png",
+          types: [
+            {
+              name: "Inverter Series",
+              products: [
+                {
+                  name: "Daikin AC Split 1 PK Inverter",
+                  desc: "AC split Daikin hemat energi 1 PK, cocok untuk kamar tidur atau ruang keluarga kecil.",
+                  price: "Rp 4.800.000",
+                  oldPrice: "Rp 5.300.000",
+                  imgList:
+                    "https://lirp.cdn-website.com/a94dfc3e/dms3rep/multi/opt/Flash+Inverter-1920w.png", // Image for list view
+                  imgDetail:
+                    "https://lirp.cdn-website.com/a94dfc3e/dms3rep/multi/opt/Feature+Card+Flash+Inverter+Website+-+01-640w.jpg", // Image for detail view
+                  features: [
+                    "Mode Inverter Bertenaga",
+                    "Filter Gin-Ion",
+                    "Super PCB",
+                    "Mode Econo",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,700 (4,100 - 12,300) Btu/h",
+                    "Daya Listrik": "810 (290 - 1,200) Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "285 x 770 x 223 mm",
+                    "Dimensi Outdoor": "418 x 695 x 244 mm",
+                    Garansi: "1 Tahun Sparepart, 3 Tahun Kompresor",
+                  },
+                },
+                {
+                  name: "Daikin AC Split 2 PK Inverter",
+                  desc: "AC split Daikin inverter 2 PK bertenaga besar, pendinginan optimal untuk ruangan luas.",
+                  price: "Rp 7.200.000",
+                  oldPrice: "Rp 8.000.000",
+                  imgList:
+                    "https://lirp.cdn-website.com/a94dfc3e/dms3rep/multi/opt/Flash+Inverter-1920w.png", // Image for list view
+                  imgDetail:
+                    "https://lirp.cdn-website.com/a94dfc3e/dms3rep/multi/opt/Feature+Card+Flash+Inverter+Website+-+01-640w.jpg", // Image for detail view
+                  features: [
+                    "Mode Inverter Bertenaga",
+                    "Filter Gin-Ion",
+                    "Super PCB",
+                    "Mode Econo",
+                    "Intelligent Eye",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "17,700 (5,500 - 20,500) Btu/h",
+                    "Daya Listrik": "1,650 (400 - 2,100) Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "295 x 990 x 263 mm",
+                    "Dimensi Outdoor": "595 x 845 x 300 mm",
+                    Garansi: "1 Tahun Sparepart, 3 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+            {
+              name: "Inodnesia Series",
+              products: [
+                {
+                  name: "Daikin AC Split 1 PK Standar",
+                  desc: "AC split standar dari Daikin 1 PK, pendinginan handal untuk ruangan sedang.",
+                  price: "Rp 4.000.000",
+                  oldPrice: "Rp 4.500.000",
+                  imgList:
+                    "https://lirp.cdn-website.com/a94dfc3e/dms3rep/multi/opt/New-Product-NP-SMS-1920w.png", // Image for list view
+                  imgDetail: "img/daikin/Ind.png", // Image for detail view
+                  features: [
+                    "Blue Fin Coating",
+                    "Filter Gin ION",
+                    "Low Voltage Protection",
+                    "Pengoperasian Hening",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "5,000 Btu/h",
+                    "Daya Listrik": "390 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "288 x 730 x 219 mm",
+                    "Dimensi Outdoor": "460 x 650 x 240 mm",
+                    Garansi: "3 Tahun Sparepart, 5 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+            {
+              name: "Thailand Series",
+              products: [
+                {
+                  name: "Daikin AC Split 1 PK Standar",
+                  desc: "AC split standar dari Daikin 1 PK, pendinginan handal untuk ruangan sedang.",
+                  price: "Rp 4.000.000",
+                  oldPrice: "Rp 4.500.000",
+                  imgList:
+                    "https://lirp.cdn-website.com/a94dfc3e/dms3rep/multi/opt/FTC-NV-1920w.png", // Image for list view
+                  imgDetail: "img/daikin/Thai.png", // Image for detail view
+                  features: [
+                    "Mode Turbo",
+                    "Filter Debu Saranet",
+                    "Mulai Ulang Otomatis",
+                    "Pengoperasian Hening",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,300 Btu/h",
+                    "Daya Listrik": "819 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "288 x 730 x 219 mm",
+                    "Dimensi Outdoor": "460 x 650 x 240 mm",
+                    Garansi: "1 Tahun Sparepart, 3 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+            {
+              name: "Malaysia Series",
+              products: [
+                {
+                  name: "Daikin AC Split 1 PK Standar",
+                  desc: "AC split standar dari Daikin 1 PK, pendinginan handal untuk ruangan sedang.",
+                  price: "Rp 4.000.000",
+                  oldPrice: "Rp 4.500.000",
+                  imgList:
+                    "https://lirp.cdn-website.com/a94dfc3e/dms3rep/multi/opt/LITE-DAIKIN-1920w.jpeg", // Image for list view
+                  imgDetail: "img/daikin/Maly.png", // Image for detail view
+                  features: [
+                    "Mode Turbo",
+                    "Filter Debu Saranet",
+                    "Mulai Ulang Otomatis",
+                    "Pengoperasian Hening",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,300 Btu/h",
+                    "Daya Listrik": "819 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "288 x 800 x 206 mm",
+                    "Dimensi Outdoor": "485 x 566 x 256 mm",
+                    Garansi: "1 Tahun Sparepart, 3 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          brand: "Panasonic",
+          imageUrl: "img/panasonic/logo.png",
+          types: [
+            {
+              name: "Inverter Series",
+              products: [
+                {
+                  name: "Panasonic AC Split 1 PK Inverter",
+                  desc: "AC split inverter Panasonic 1 PK yang efisien dan ramah lingkungan.",
+                  price: "Rp 4.700.000",
+                  oldPrice: "Rp 5.100.000",
+                  imgList:
+                    "https://www.panasonic.com/content/dam/pim/id/id/RA/RAC-CS/RAC-CS-PU-AKJ-SPP/ast-2502123.png.pub.png?resize=272%3A204", // Image for list view
+                  imgDetail:
+                    "https://www.panasonic.com/content/dam/pim/id/id/RA/RAC-CS/RAC-CS-PU-AKJ-SPP/ast-2582765.jpg.pub.jpg", // Image for detail view
+                  features: [
+                    "Teknologi nanoe™ X",
+                    "Mode ECO dengan A.I.",
+                    "Pendinginan Cepat",
+                    "Desain Minimalis",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,720 (3,480 - 11,600) Btu/h",
+                    "Daya Listrik": "824 (285 - 1,020) Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "290 x 779 x 209 mm",
+                    "Dimensi Outdoor": "511 x 650 x 230 mm",
+                    Garansi: "1 Tahun Sparepart, 3 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+
+            {
+              name: "Standar Series",
+              products: [
+                {
+                  name: "Panasonic AC Split 1 PK Standar",
+                  desc: "AC split standar Panasonic 1 PK, pilihan ekonomis dan handal.",
+                  price: "Rp 3.900.000",
+                  oldPrice: "Rp 4.300.000",
+                  imgList:
+                    "https://www.panasonic.com/content/dam/pim/id/id/RA/RAC-CS/RAC-CS-YN-AKJ-SPP/ast-2590092.png.pub.png?resize=272%3A204", // Image for list view
+                  imgDetail:
+                    "https://www.panasonic.com/content/dam/pim/id/id/RA/RAC-CS/RAC-CS-YN-AKJ-SPP/ast-2599413.jpg.pub.thumb.644.644.jpg", // Image for detail view
+                  features: [
+                    "Powerful Mode",
+                    "iAUTO",
+                    "Evaporator Blue Fin",
+                    "Rangka Outdoor Ecotough",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "760 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "290 x 799 x 209 mm",
+                    "Dimensi Outdoor": "490 x 650 x 230 mm",
+                    Garansi: "1 Tahun Sparepart, 3 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          brand: "Flife",
+          imageUrl: "img/flife/logo.png",
+          types: [
+            {
+              name: "Low Watt Series",
+              products: [
+                {
+                  name: "Flife AC Split 1 PK Low Watt",
+                  desc: "AC split Flife 1 PK hemat daya, cocok untuk penghematan listrik.",
+                  price: "Rp 5.200.000",
+                  oldPrice: "Rp 5.700.000",
+                  imgList:
+                    "https://img.greeindonesia.com/website_images/20241205/website_flife/website_flife_802/zXqFQaOD0O05122024101652.png", // Image for list view
+                  imgDetail:
+                    "https://img.greeindonesia.com/website_images/20240711/website_flife/website_flife_57/wzwYokRoOb11072024101614.JPEG", // Image for detail view
+                  features: [
+                    "Mode Hemat Energi",
+                    "Pengingat Jadwal",
+                    "Self-Diagnosis",
+                    "Filter Kesehatan",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "660 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "292 x 877 x 222 mm",
+                    "Dimensi Outdoor": "598 x 495 x 265 mm",
+                    Garansi: "1 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+            {
+              name: "Standar Series",
+              products: [
+                {
+                  name: "Flife AC Split 1 PK Standar",
+                  desc: "AC split standar Fife 1 PK, pendinginan efektif dan tahan lama.",
+                  price: "Rp 3.700.000",
+                  oldPrice: "Rp 4.100.000",
+                  imgList:
+                    "https://img.greeindonesia.com/website_images/20241205/website_flife/website_flife_803/SzBnrAnJqc05122024174654.png", // Image for list view
+                  imgDetail:
+                    "https://img.greeindonesia.com/website_images/20240711/website_flife/website_flife_57/XQLlYNXxG811072024101651.JPEG", // Image for detail view
+                  features: [
+                    "Frozen Power",
+                    "Gold Fin & Blue Fin",
+                    "Smart Cleaner",
+                    "Mode Turbo",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "750 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "250 x 730 x 190 mm",
+                    "Dimensi Outdoor": "500 x 720 x 240 mm",
+                    Garansi: "1 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          brand: "Gree",
+          imageUrl: "img/gree/gree.png.png",
+          types: [
+            {
+              name: "Inverter Series",
+              products: [
+                {
+                  name: "Gree AC Split 1 PK Inverter",
+                  desc: "AC split inverter Gree 1 PK dengan teknologi hemat energi.",
+                  price: "Rp 4.600.000",
+                  oldPrice: "Rp 5.000.000",
+                  imgList:
+                    "https://img.greeindonesia.com/website_images/20241212/website_gree/website_gree_9180/6sH4xwDn2812122024091455.png", // Image for list view
+                  imgDetail:
+                    "https://img.greeindonesia.com/website_images/20250203/website_gree/website_gree_10482/WCQRLq1s0U03022025152830.JPEG", // Image for detail view
+                  features: [
+                    "Fast Cooling 'Turbo'",
+                    "Hemat Energi",
+                    "Pengingat Pintar",
+                    "Filter DIY",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 (2,840 - 11,600) Btu/h",
+                    "Daya Listrik": "755 (180 - 1,200) Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "293 x 825 x 196 mm",
+                    "Dimensi Outdoor": "545 x 776 x 320 mm",
+                    Garansi:
+                      "1 Tahun Ganti Baru, 5 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+                {
+                  name: "Gree AC Split 2 PK Inverter",
+                  desc: "AC split inverter Gree 2 PK, performa tinggi dan sangat efisien.",
+                  price: "Rp 6.800.000",
+                  oldPrice: "Rp 7.400.000",
+                  imgList:
+                    "https://img.greeindonesia.com/website_images/20241212/website_gree/website_gree_9180/6sH4xwDn2812122024091455.png", // Image for list view
+                  imgDetail:
+                    "https://img.greeindonesia.com/website_images/20250203/website_gree/website_gree_10482/WCQRLq1s0U03022025152830.JPEG", // Image for detail view
+                  features: [
+                    "Fast Cooling 'Turbo'",
+                    "Hemat Energi",
+                    "Pengingat Pintar",
+                    "Filter DIY",
+                    "I-Feel Technology",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "18,000 (4,000 - 19,500) Btu/h",
+                    "Daya Listrik": "1,640 (300 - 2,200) Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "300 x 970 x 224 mm",
+                    "Dimensi Outdoor": "596 x 899 x 378 mm",
+                    Garansi:
+                      "1 Tahun Ganti Baru, 5 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+            {
+              name: "Low Watt Series",
+              products: [
+                {
+                  name: "Gree AC Split 1 PK Low Watt",
+                  desc: "AC split Gree 1 PK hemat daya, cocok untuk penghematan listrik.",
+                  price: "Rp 4.900.000",
+                  oldPrice: "Rp 5.400.000",
+                  imgList:
+                    "https://img.greeindonesia.com/website_images/20241212/website_gree/website_gree_9172/i3ZbtfFYS112122024090856.png", // Image for list view
+                  imgDetail:
+                    "https://img.greeindonesia.com/website_images/20250203/website_gree/website_gree_10485/GgS3r9uIYi03022025160735.JPEG", // Image for detail view
+                  features: [
+                    "Mode Hemat Energi",
+                    "Pengingat Jadwal",
+                    "Self-Diagnosis",
+                    "Filter Kesehatan",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "680 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "260 x 704 x 185 mm",
+                    "Dimensi Outdoor": "450 x 705 x 270 mm",
+                    Garansi:
+                      "1 Tahun Ganti Baru, 5 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+            {
+              name: "Standar Series",
+              products: [
+                {
+                  name: "Gree AC Split 1 PK Standar",
+                  desc: "AC split standar Gree 1 PK, pendinginan stabil dan kuat.",
+                  price: "Rp 3.950.000",
+                  oldPrice: "Rp 4.350.000",
+                  imgList:
+                    "https://img.greeindonesia.com/website_images/20241129/website_gree/website_gree_9177/5MLdd5n6bC29112024153904.png", // Image for list view
+
+                  imgDetail:
+                    "https://img.greeindonesia.com/website_images/20250203/website_gree/website_gree_10484/mzDcmEkLOX03022025154946.JPEG",
+
+                  features: [
+                    "Frozen Power",
+                    "Gold Fin & Blue Fin",
+                    "Smart Cleaner",
+                    "Mode Turbo",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "780 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "260 x 704 x 185 mm",
+                    "Dimensi Outdoor": "450 x 705 x 270 mm",
+                    Garansi:
+                      "1 Tahun Ganti Baru, 5 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+                {
+                  name: "Gree AC Split 0,5 PK Standar",
+                  desc: "AC split standar Gree 1 PK, pendinginan stabil dan kuat.",
+                  price: "Rp 3.950.000",
+                  oldPrice: "Rp 4.350.000",
+                  imgList:
+                    "https://img.greeindonesia.com/website_images/20250221/website_gree/website_gree_10578/6d3MsIo49d21022025094036.png", // Image for list view
+                  imgDetail:
+                    "https://img.greeindonesia.com/website_images/20250203/website_gree/website_gree_10483/pwVnbeQ6c603022025154308.JPEG", // Image for detail view
+                  features: [
+                    "Frozen Power",
+                    "Gold Fin & Blue Fin",
+                    "Smart Cleaner",
+                    "Mode Turbo",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "5,000 Btu/h",
+                    "Daya Listrik": "380 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "260 x 704 x 185 mm",
+                    "Dimensi Outdoor": "450 x 705 x 270 mm",
+                    Garansi:
+                      "1 Tahun Ganti Baru, 5 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+
+        {
+          brand: "Sansui",
+          imageUrl: "img/sansui/logo.png",
+          types: [
+            {
+              name: "Standar Series",
+              products: [
+                {
+                  name: "Sansui AC Split 1 PK Standar",
+                  desc: "AC split standar Fife 1 PK, pendinginan efektif dan tahan lama.",
+                  price: "Rp 3.700.000",
+                  oldPrice: "Rp 4.100.000",
+                  imgList:
+                    "https://sansui-indonesia.com/wp-content/uploads/2020/01/3-4-2.jpg", // Image for list view
+                  imgDetail:
+                    "https://sansui-indonesia.com/wp-content/uploads/2020/01/SELLINGPOINT-MIN-2.jpg", // Image for detail view
+                  features: [
+                    "Frozen Power",
+                    "Gold Fin & Blue Fin",
+                    "Smart Cleaner",
+                    "Mode Turbo",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "750 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "250 x 730 x 190 mm",
+                    "Dimensi Outdoor": "500 x 720 x 240 mm",
+                    Garansi: "1 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          brand: "Midea",
+          imageUrl: "img/Midea/Logo.WEBP",
+          types: [
+            {
+              name: "Standar Series",
+              products: [
+                {
+                  name: "Midea AC Split 1 PK Standar",
+                  desc: "AC split standar Fife 1 PK, pendinginan efektif dan tahan lama.",
+                  price: "Rp 3.700.000",
+                  oldPrice: "Rp 4.100.000",
+                  imgList: "img/Midea/ST.WEBP", // Image for list view
+                  imgDetail: "img/Midea/Dt.ST.webp", // Image for detail view
+                  features: [
+                    "Frozen Power",
+                    "Gold Fin & Blue Fin",
+                    "Smart Cleaner",
+                    "Mode Turbo",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "750 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "250 x 730 x 190 mm",
+                    "Dimensi Outdoor": "500 x 720 x 240 mm",
+                    Garansi: "1 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+            {
+              name: "Ineverter Series",
+              products: [
+                {
+                  name: "Midea AC Split 1 PK Inverter",
+                  desc: "AC split standar Fife 1 PK, pendinginan efektif dan tahan lama.",
+                  price: "Rp 3.700.000",
+                  oldPrice: "Rp 4.100.000",
+                  imgList: "img/Midea/INV.WEBP", // Image for list view
+                  imgDetail: "img/Midea/Dt.INV", // Image for detail view
+                  features: [
+                    "Frozen Power",
+                    "Gold Fin & Blue Fin",
+                    "Smart Cleaner",
+                    "Mode Turbo",
+                  ],
+                  specs: {
+                    "Kapasitas Pendingin": "9,000 Btu/h",
+                    "Daya Listrik": "750 Watt",
+                    "Tipe Freon": "R32",
+                    "Dimensi Indoor": "250 x 730 x 190 mm",
+                    "Dimensi Outdoor": "500 x 720 x 240 mm",
+                    Garansi: "1 Tahun Sparepart, 10 Tahun Kompresor",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ];
+
+      // --- DOM ELEMENTS ---
+      const mainContent = document.getElementById("main-content");
+      const contactSection = document.getElementById("contact-section");
+      const contactLink = document.getElementById("contact-link");
+      const homeLink = document.getElementById("home-link");
+      const homeNavLink = document.getElementById("home-nav-link");
+      const productModal = document.getElementById("product-modal");
+      const detailModal = document.getElementById("product-detail-modal");
+
+      // --- NAVIGATION ---
+      function showContactPage() {
+        mainContent.classList.add("hidden");
+        contactSection.classList.remove("hidden");
+        closeProductModal();
+      }
+
+      function showHomePage() {
+        contactSection.classList.add("hidden");
+        mainContent.classList.remove("hidden");
+      }
+
+      contactLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        showContactPage();
+      });
+      homeLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        showHomePage();
+      });
+      homeNavLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        showHomePage();
+      });
+
+      // --- BRAND & PRODUCT DISPLAY ---
+      function populateBrandGrid() {
+        const brandGrid = document.getElementById("brand-grid");
+        brandGrid.innerHTML = "";
+        acData.forEach((brand) => {
+          const brandCard = document.createElement("div");
+          brandCard.className =
+            "brand-card bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col items-center text-center";
+          brandCard.onclick = () => showProductModal(brand.brand);
+          brandCard.innerHTML = `
+                    <img src="${brand.imageUrl}" alt="Logo ${brand.brand}" class="w-full h-48 object-contain rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Image+Error';">
+                    <h3 class="text-2xl font-semibold text-gray-900">${brand.brand}</h3>
+                `;
+          brandGrid.appendChild(brandCard);
+        });
+      }
+
+      function showProductModal(brandName) {
+        const brand = acData.find((b) => b.brand === brandName);
+        if (!brand) return;
+
+        document.getElementById(
+          "modal-brand-title"
+        ).textContent = `Produk AC Split ${brand.brand}`;
+        const productList = document.getElementById("modal-product-list");
+        productList.innerHTML = "";
+
+        const sortedTypes = [...brand.types].sort((a, b) => {
+          const order = [
+            "Inverter Series",
+            "Low Watt Series",
+            "Standar Series",
+          ];
+          return order.indexOf(a.name) - order.indexOf(b.name);
+        });
+
+        sortedTypes.forEach((type) => {
+          const typeSection = document.createElement("div");
+          typeSection.className = "mb-8";
+          typeSection.innerHTML = `<h4 class="text-2xl font-semibold text-gray-700 mb-4 ml-2 border-b border-gray-300 pb-1">Tipe: ${type.name}</h4>
+                                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6"></div>`;
+          const productGrid = typeSection.querySelector(".grid");
+
+          const sortedProducts = [...type.products].sort((a, b) => {
+            const pkA = parseFloat(a.name.match(/(\d+\.?\d*)\s*PK/)[1]);
+            const pkB = parseFloat(b.name.match(/(\d+\.?\d*)\s*PK/)[1]);
+            return pkA - pkB;
+          });
+
+          sortedProducts.forEach((product) => {
+            const productCard = document.createElement("div");
+            // Make the entire product card clickable
+            productCard.className =
+              "product-card bg-white rounded-xl shadow-sm overflow-hidden p-4 flex flex-col items-center text-center border border-gray-200";
+            productCard.onclick = () =>
+              showProductDetailModal(brand.brand, type.name, product.name); // Add click handler to the card
+            productCard.innerHTML = `
+                        <img src="${product.imgList}" alt="${
+              product.name
+            }" class="w-full h-32 object-cover rounded-lg mb-3" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Image+Error';">
+                        <h5 class="text-lg font-semibold text-gray-900 mb-1">${
+                          product.name
+                        }</h5>
+                        <p class="text-gray-600 text-xs mb-3 line-clamp-2">${
+                          product.desc
+                        }</p>
+                        <div class="flex items-baseline mb-3">
+                            <span class="text-2xl font-bold text-blue-700">${
+                              product.price
+                            }</span>
+                            <span class="text-sm text-gray-500 ml-1 line-through">${
+                              product.oldPrice || ""
+                            }</span>
+                        </div>
+                        <!-- Removed the separate "Lihat Detail" button as the whole card is clickable -->
+                    `;
+            productGrid.appendChild(productCard);
+          });
+          productList.appendChild(typeSection);
+        });
+
+        productModal.classList.add("show");
+        productModal.classList.remove("hidden");
+      }
+
+      function showProductDetailModal(brandName, typeName, productName) {
+        const brand = acData.find((b) => b.brand === brandName);
+        const type = brand?.types.find((t) => t.name === typeName);
+        const product = type?.products.find((p) => p.name === productName);
+        if (!product) return;
+
+        const detailContent = document.getElementById("product-detail-content");
+        // Modified structure to ensure image is always at the top and fills its column
+        detailContent.innerHTML = `
+                <button class="close-button" onclick="closeDetailModal()">&times;</button>
+                <div class="flex flex-col md:flex-col items-center"> <!-- Changed to flex-col for consistent stacking -->
+                    <div class="w-full mb-6"> <!-- Image always takes full width and has bottom margin -->
+                        <img src="${product.imgDetail}" alt="${
+          product.name
+        }" class="w-full h-auto object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/ffffff?text=Image+Error';">
+                    </div>
+                    <div class="w-full"> <!-- Details section also takes full width -->
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">${
+                          product.name
+                        }</h3>
+                        <p class="text-gray-700 text-lg mb-4">${
+                          product.desc
+                        }</p>
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-4xl font-extrabold text-blue-700">${
+                              product.price
+                            }</span>
+                            ${
+                              product.oldPrice
+                                ? `<span class="text-lg text-gray-500 ml-3 line-through">${product.oldPrice}</span>`
+                                : ""
+                            }
+                        </div>
+
+                        ${
+                          product.features && product.features.length > 0
+                            ? `
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">Fitur Unggulan:</h4>
+                            <ul class="list-disc list-inside text-gray-700 mb-5 pl-4">
+                                ${product.features
+                                  .map((feature) => `<li>${feature}</li>`)
+                                  .join("")}
+                            </ul>
+                        `
+                            : ""
+                        }
+
+                        ${
+                          product.specs
+                            ? `
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">Spesifikasi:</h4>
+                            <table class="spec-table text-gray-700 rounded-lg overflow-hidden">
+                                <tbody>
+                                    ${Object.entries(product.specs)
+                                      .map(
+                                        ([key, value]) => `
+                                        <tr>
+                                            <td>${key}</td>
+                                            <td>${value}</td>
+                                        </tr>
+                                    `
+                                      )
+                                      .join("")}
+                                </tbody>
+                            </table>
+                        `
+                            : ""
+                        }
+                    </div>
+                </div>
+            `;
+
+        detailModal.classList.add("show");
+        detailModal.classList.remove("hidden");
+      }
+
+      function closeProductModal() {
+        productModal.classList.remove("show");
+        productModal.classList.add("hidden");
+      }
+
+      function closeDetailModal() {
+        detailModal.classList.remove("show");
+        detailModal.classList.add("hidden");
+      }
+
+      // Event listeners to close modals when clicking outside
+      productModal.addEventListener("click", (e) => {
+        if (e.target === productModal) {
+          closeProductModal();
+        }
+      });
+
+      detailModal.addEventListener("click", (e) => {
+        if (e.target === detailModal) {
+          closeDetailModal();
+        }
+      });
+
+      // Initial population of the brand grid when the page loads
+      document.addEventListener("DOMContentLoaded", populateBrandGrid);
+    </script>
+  </body>
+</html>

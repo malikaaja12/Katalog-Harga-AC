@@ -1,0 +1,92 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+.brand-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.product-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer; /* Add cursor pointer to indicate clickability */
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+#product-modal {
+  z-index: 1000;
+}
+#product-detail-modal {
+  z-index: 1100;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-content {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+.modal-overlay.show .modal-content {
+  transform: scale(1);
+}
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.2s ease-in-out;
+}
+.close-button:hover {
+  color: #ef4444;
+}
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.spec-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.spec-table tr:last-child td {
+  border-bottom: none;
+}
+.spec-table td:first-child {
+  font-weight: 600;
+  color: #4b5563;
+  width: 40%;
+}
